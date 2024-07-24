@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 - VISTA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        .p__caption {
+            text-align: center;
+            /* Center-align the caption text */
+            font-size: 0.875rem;
+            /* Adjust the font size if needed */
+            color: #555;
+            /* Change the color of the caption text */
+            margin-top: 0;
+            /* Add space above the caption, if needed */
+            margin-bottom: 30px;
+            /* Remove space below the caption */
+        }
+
+        section {
+            padding: 12vh;
+            /* Adjust padding to reduce gaps */
+            margin: 0 auto;
+            /* Center section and remove excessive horizontal margins */
+            max-width: 1200px;
+            /* Optional: constrain the width */
+            height: auto;
+            /* Allow height to adjust based on content */
+            box-sizing: border-box;
+        }
+
+        .project-content {
+            padding: 12vh;
+            text-align: center;
+        }
+
+        .project-content .subtitle {
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .project-section {
+            clear: both;
+            overflow: hidden;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .project-section h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #333;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project-section a:hover {
+            text-decoration: underline;
+        }
+
+        .project-content img {
+            width: 100%;
+            /* Ensure the image is responsive */
+            max-width: 800px;
+            /* Constrain the maximum width of the image */
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .pdf-container {
+            width: 100%;
+            max-width: 800px;
+            /* Constrain the maximum width of the PDF container */
+            height: 600px;
+            /* Adjust height as needed */
+            margin: 0 auto;
+            /* Center horizontally */
+            overflow: auto;
+            /* Enable scrolling */
+            display: flex;
+            justify-content: center;
+            /* Center horizontally within the container */
+            align-items: center;
+            /* Center vertically within the container */
+            box-sizing: border-box;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#project">Project</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <main class="project-content">
+        <section class="project-section">
+            <div class="title-container">
+                <h1 class="title">HacX! Hack for Public Safety</h1>
+                <p class="subtitle">Finalist Team, Issued by Home Team Science and Technology Agency (HTX) and Microsoft
+                </p>
+            </div>
+            <img src="./assets/project-2.1.jpg" alt="Group Image">
+            <p__caption>Team Triple L on the day of Finals, emerging as Top 10 amongst more than 50 teams</p>
+                <h2>Project Overview</h2>
+                <p>In a rigorous competition that challenged participants to devise technology-driven solutions for
+                    public
+                    safety, our team conceptualized a prototype that is aimed at streamlining and enhancing operational
+                    workflows within Prison Services.
+                    Our solution, VISTA (Vision Integrated System for Tool Accountability), leverages advanced
+                    technology including
+                    Microsoft Azure, Copilot, YOLOv8 computer vision model, and reinforcement learning to enhance
+                    efficiency, accuracy, and security in tool management.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Our Solution: VISTA</h2>
+            <img src="./assets/project-2.2.png" alt="VISTA">
+            <p>VISTA offers a comprehensive solution with several key features to address the identified pain points.
+            </p>
+            <ul>
+                <li><strong>Object Recognition:</strong> Utilizes YOLOv8 for real-time detection and confidence ratings.
+                </li>
+                <li><strong>Weight Detection:</strong> Incorporates a weight-sensitive platform for precise tool weight
+                    measurement.</li>
+                <li><strong>Online Form:</strong> Auto-fills tool details to reduce manual entry and errors.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>VISTA Tool Detection Unit</h2>
+            <img src="./assets/project-2.3.png" alt="VISTA">
+            <p>Features a high-definition camera, weight-sensitive platform, and user display panel for clear
+                instructions. The system integrates with Microsoft Azure and uses reinforcement learning for continuous
+                improvement. Weight detection for large and small tools is handled by a weight-sensitive platform.
+                Discrepancies are
+                flagged and reviewed, with the model learning and adjusting thresholds over time.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>VISTA Form</h2>
+            <img src="./assets/project-2.4.png" alt="VISTA">
+            <p>The VISTA online form auto-fills tool details based on recognition and weight detection, streamlining the
+                verification process. Manual entry is available for unrecognized tools to improve the model.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Risk Assessment & Considerations</h2>
+            <img src="./assets/project-2.5.png" alt="Risk Assessment">
+            <p>VISTA includes a risk assessment feature to evaluate contractor visits based on tool count, location, and
+                tool recognition. This helps in implementing targeted security measures and informed decision-making.
+            </p>
+        </section>
+
+        <h2>Competition Pitch Deck</h2>
+        <div class="pdf-container">
+            <iframe src="./assets/HacX_RL2_TripleL.pdf"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2024 Chan Kit Ho. Built with HTML and CSS.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        section {
+            padding: 2rem 1rem;
+            /* Adjust padding to reduce gaps */
+            margin: 0 auto;
+            /* Center section and remove excessive horizontal margins */
+            max-width: 1200px;
+            /* Optional: constrain the width */
+            height: auto;
+            /* Allow height to adjust based on content */
+            box-sizing: border-box;
+        }
+
+        .project-content {
+            padding: 12vh;
+            text-align: center;
+            /* Center-align all text */
+        }
+
+        .project-content .subtitle {
+            font-size: 2em !important;
+            /* Ensure the font size is applied */
+            margin-top: 10px;
+            /* Add space above the subtitle */
+            text-align: center;
+            /* Center-align the subtitle */
+        }
+
+        .section {
+            margin-bottom: 40px;
+            /* Increased margin for better spacing */
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            text-align: center;
+            /* Center-align headings */
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            /* Set the color of paragraphs */
+            margin-bottom: 8px;
+            text-align: justify;
+            /* Justify text */
+            margin: 0 auto;
+            /* Center text block within container */
+            max-width: 800px;
+            /* Optional: limit width for better readability */
+        }
+
+        .section ul {
+            list-style-type: disc;
+            /* Ensure bullet points are visible */
+            padding-left: 20px;
+            /* Align bullet points */
+            color: #333;
+            /* Match color with p text */
+            text-align: left;
+            /* Align list items to the left */
+            margin: 0 auto;
+            /* Center list block */
+            max-width: 800px;
+            /* Optional: limit width for better readability */
+        }
+
+        .section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            text-decoration: underline;
+        }
+
+        .project-content .subtitle {
+            font-size: 2em !important;
+            /* Force the font size */
+            margin-top: 10px;
+            /* Add space above the subtitle */
+            text-align: center;
+            /* Center align the subtitle */
+        }
+
+        .project-content img {
+            width: 800px;
+            /* Set a specific width for the image */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Center image horizontally */
+            margin: 20px auto;
+            /* Center image with vertical margin */
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#project">Project</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <main class="project-content">
+        <section class="section">
+            <div class="title-container">
+                <h1 class="title">Advanced Predictive Modeling for Methane Emission Reduction in Oil & Gas</h1>
+                <p class="subtitle">A Case Study with Saudi Aramco</p>
+            </div>
+            <img src="./assets/project-1.1.png" alt="Web Interface">
+            <p>Course: BC2406 Analytics I, Grade obtained: A+ </br></p>
+            <p>Find the project on GitHub: <a
+                    href="https://github.com/tyeckh/BC2406-Analytics-I-Visual-Predictive-Techniques" target="_blank"
+                    rel="noopener noreferrer">GitHub Repository</a></p>
+
+            <h2>Project Overview</h2>
+            <p>A comprehensive predictive model to assist Saudi Aramco in reducing methane emissions as part of its
+                sustainability efforts. The project integrates statistical analysis with advanced modeling techniques to
+                forecast emission levels and suggest actionable steps for reduction.</p>
+
+            <h2>Objectives</h2>
+            <p>This project provides a data-driven solution to reduce methane emissions in the oil and gas industry,
+                focusing on Saudi Aramco. Utilizing predictive modeling techniques, including Linear Regression, CART,
+                and Random Forest, the project aims to forecast methane emissions and propose effective reduction
+                strategies.</p>
+
+            <h2>Analytical and Predictive Techniques Utilised</h2>
+            <ul>
+                <li>Logistic Regression for predicting class labels for missing categorical data.</li>
+                <li>Linear Regression for predictive modelling, evaluated against other models.</li>
+                <li>Classification And Regression Tree (CART) for predictive modelling, evaluated against other models.
+                </li>
+                <li>Random Forest for predictive modelling, evaluated against other models.</li>
+                <li>Web interface built on R Shiny for easy reference and application to business recommendations.</li>
+            </ul>
+
+            <h2>Three-Tiered Approach</h2>
+            <ul>
+                <li>Assessing Acceptability: Benchmarking predicted emission levels against industry standards.</li>
+                <li>Tackling Significant Variables: Identifying and strategizing actions to address key contributing
+                    factors.</li>
+                <li>Scenario Testing: Utilizing predictive models to optimize emission reduction strategies.</li>
+            </ul>
+
+            <h2>Key Findings</h2>
+            <p>Technological upgrades, maintenance of older infrastructure, and efficient equipment deployment are
+                critical to reducing methane emissions.</p>
+
+            <h2>Proposed Solution</h2>
+            <p>Our solution aims to position Aramco as a leader in sustainable energy practices, ensuring compliance
+                with global standards. By lowering emissions, Aramco may reduce its cost of capital, enhancing
+                shareholder value.</p>
+
+            <h2>Conclusion</h2>
+            <p>This project demonstrates the synergy between environmental sustainability and economic success. By
+                actively addressing methane emissions, Aramco contributes to global climate efforts while improving its
+                financial outlook.</p>
+
+            <h2>Acknowledgments</h2>
+            <p>This project, including its report, script, and presentation, was developed solely as a Proof of Concept
+                for academic purposes under the course BC2406 at Nanyang Technological University Business School. It
+                was presented internally to the course lecturer and is not affiliated with or endorsed by Saudi Aramco
+                or any commercial entities. All analyses, predictions, and recommendations are hypothetical and for
+                educational purposes only.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2024 Chan Kit Ho. Built with HTML and CSS.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
