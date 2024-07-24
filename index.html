@@ -14,13 +14,13 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Project</a></li>
+                <li><a href="#project-header">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Chan Kit Ho</div>
+        <a href="#profile" class="logo">Chan Kit Ho</a>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -30,11 +30,12 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#project-header" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+    <div class="nav__buffer"></div>    
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Profile Pic">
@@ -65,7 +66,8 @@
                 class="icon"
                 onclick="window.open('https://github.com/tyeckh', '_blank', 'noopener,noreferrer')"/>            </div>
         </div>
-    </section>
+    </section>    
+    <div class="nav__buffer"></div>   
     <section id="about">
         <p class="section__text__p1"> Get to Know More</p>
         <h1 class="title"> About Me</h1>
@@ -87,7 +89,7 @@
                         />
                         <h3> Experience</h3>
                         <p2> Experience in Data Governance and Compliance, Data Engineering and Analytics <br/> <br/>
-                            Ex-Intern at Health Promotion Board, Keppel and Seatrium</p2>
+                            Ex-Intern at Health Promotion Board, Keppel and Seatrium Group</p2>
                     </div>
                     <div class="details-container">
                         <img
@@ -95,8 +97,11 @@
                         alt="Education icon"
                         class="icon" 
                         />
-                        <h3> Education</h3>
-                        <p2> Bachelors of Computing in Computer Science (with Honours)  <br/><br/> Bachelors of Business in Business Analytics (with Honours)</p2>
+                        <h3>Education</h3>
+                        
+                        <p2>Bachelor of Computing in Computer Science (Honours)<br/><br/>
+                            Bachelor of Business in Business Analytics (Honours)</p>
+                        <p2><br/>Expected Graduation: 2026 </p>
                     </div>
                 </div>
                 <div class="text-container">
@@ -297,12 +302,14 @@
           src="./assets/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='./#projects'"
+          onclick="location.href='./#project-header'"
         />
       </section>
-      <section id="project">
+      <section-header id="project-header">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
+      </section-header>
+      <section id="projects">
         <div class="project-card">
             <img src="./assets/project-1.1.png" alt="Project 1">
             <p class="project-title">Advanced Predictive Modeling for Emission Reduction in Oil & Gas </p>
@@ -348,7 +355,7 @@
             <ul class="nav-links">
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="#project-header">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>

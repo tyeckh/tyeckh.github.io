@@ -1,13 +1,11 @@
 @media screen and (max-width: 1400px) {
     #profile {
       height: 83vh;
-      margin-bottom: 6rem;
     }
     .about-containers {
       flex-wrap: wrap;
     }
-    #contact,
-    #projects {
+    #contact{
       height: fit-content;
     }
   }
@@ -48,8 +46,7 @@
   }
   
   @media screen and (max-width: 600px) {
-    #contact,
-    footer {
+    #contact {
       height: 40vh;
     }
     #profile {
@@ -68,7 +65,12 @@
     .btn-container {
       flex-wrap: wrap;
     }
-    .contact-info-container {
+    .about-containers{
+        flex-direction: column;
+    }
+
+
+    .contact-info- container {
       margin: 0;
     }
     .contact-info-container p,

@@ -5,7 +5,7 @@ function toggleMenu(){
     icon.classList.toggle("open")
 }
 
-document.getElementById('logo').addEventListener('click', function(event) {
+document.querySelector('.logo').addEventListener('click', function(event) {
     event.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+});

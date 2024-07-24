@@ -21,6 +21,10 @@ p {
     color: rgb(85,85,85);
 }
 
+.nav__buffer {
+    height: 12vh;
+}
+
 /* TRANSITION */
 a, .btn{
     transition: all 300ms ease;
@@ -161,6 +165,8 @@ section {
 
 .section-container {
     display: flex;
+    gap: 4rem;
+    display: flex;
 }
 
 /* PROFILE SECTION */
@@ -189,9 +195,9 @@ section {
 }
 
 .section__text__p1 {
+    position: sticky;
     text-align: center;
     font-size: 1.75rem;
-    margin-bottom: 1rem;
 }
 
 .section__text__p2 {
@@ -202,6 +208,8 @@ section {
 .title {
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 1rem;
+
 }
 #socials-container {
     display: flex;
@@ -292,10 +300,10 @@ border-radius: 2rem;
     text-align: center;
 }
 
-.section-container {
-    gap: 4rem;
-    height: 80%;
-}
+.text-container p {
+    text-align: justify;
+  }
+  
 
 .section__pic-container {
     height: 400px;
@@ -345,13 +353,20 @@ border-radius: 2rem;
   
   /* PROJECTS SECTION */
   
-  #project {
+  #projects {
     position: relative;
-    height: auto;
     overflow-x: auto;
     white-space: nowrap;
+    height: auto;
+    padding: 6vh;
+    margin-bottom:6vh;
   }
 
+  section-header {
+    display: block;
+    padding-top: 12vh;  
+    box-sizing: border-box;
+  }
   .project-card {
     display: inline-block;
     vertical-align: top;
