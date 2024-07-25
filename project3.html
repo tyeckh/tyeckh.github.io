@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 - NTU BAC X Accenture Case Competition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        section {
+            margin: 0 auto;
+            max-width: 1200px;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        .project-content {
+            padding-top: 12vh;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+
+        .project-content .subtitle {
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .project-section {
+            clear: both;
+            overflow: hidden;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .project-section h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #333;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project-section a:hover {
+            text-decoration: underline;
+        }
+
+        .project-content img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .project-section p.p__caption {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .pdf-container {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            margin: 0 auto;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#project-header">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#project-header" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <main class="project-content">
+        <section class="project-section">
+            <div class="title-container">
+                <h1 class="title">NTU BAC X Accenture Case Competition</h1>
+                <p class="subtitle">1st Runner-Up, Issued by NTU Business Analytics Club and Accenture · Mar 2024</p>
+            </div>
+            <img src="./assets/project-3.2.png" alt="Team Triple L">
+            <p class="p__caption">Team Triple L, emerging 1st Runner Up amongst 10 competing Finalist Teams.</p>
+
+            <h2>Project Overview</h2>
+            <p>In the NTU BAC X Accenture Case Competition, our team's dedication and innovative approach were recognized as we proudly emerged as the 1st Runner-Up. With a focus on sustainability and analytics, we embarked on a mission to revolutionize the last mile delivery sector, aiming to reduce carbon emissions and environmental impact. Through meticulous research and strategic planning, we developed a comprehensive roadmap towards achieving a Net Zero Goal, leveraging on technology and innovative strategies.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Road to Net Zero: Optimus Prime's Case Analysis</h2>
+            <img src="./assets/project-3.1.png" alt="Dashboard">
+            <p class="p__caption">Case Analysis Dashboard</p>
+            <p>In this presentation, we will be working towards Optimus Prime's pledge to achieve net-zero emissions by 2050, underscoring the dedication to sustainability and environmental stewardship. Our detailed plan, encompassing Company Analysis, Current Carbon Baseline, Phased Decarbonisation Implementation Strategies, and Forward-Looking Innovations, is poised to steer Optimus Prime towards a cleaner, greener future.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Company Analysis</h2>
+            <p>Our analysis covered several aspects:
+            </p>
+            <ul>
+                <li>Current Fleet Size</li>
+                <li>Districts Distribution</li>
+                <li>Business Units</li>
+                <li>Types of Vehicles</li>
+            </ul>
+            <p> <br/> This was done through both excel and Tableau for Data Visualisation and Analysis.
+        </section>
+
+        <section class="project-section">
+            <h2>Carbon Baseline</h2>
+            <p>To understand the emissions, we analyzed historical data to estimate emission levels, comparing the carbon footprint between Internal Combustion Engines (ICE) and Electric Vehicles (EVs).</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Decarbonisation Route Map</h2>
+            <img src="./assets/project-3.3.png" alt="Decarbonisation Route Map">
+            <p>Our phased approach includes:
+            </p>
+            <ul>
+                <li><strong>Phase 1:</strong> Optimising Current Operations</li>
+                <li><strong>Phase 2:</strong> Transition to EVs</li>
+                <li><strong>Phase 3:</strong> Scaling and Optimisation</li>
+                <li><strong>Phase 4:</strong> Achieving the Net Zero Goal</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Decarbonisation Roadmap: 1. Optimize Current Operations</h2>
+            <p>Installing telematics can result in 15-20% fuel savings. We calculated the estimated fuel cost savings for each vehicle category per year, and decided to install telematics in vehicles based on their lifespan.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Decarbonisation Roadmap: 2. Transition to Electrification</h2>
+            <p>When vehicles reach the end of their lifespan, instead of replacing them with new ICE vehicles, Optimus Prime will replace them with EVs. Telematics will be installed on new vehicles immediately to maximize savings.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Decarbonisation Roadmap: 3. Scale and Optimise</h2>
+            <p>For the initial years, districts can tap on the local public infrastructure to power the electric vehicles. As the EV fleet increases, there are cost savings that can be realized by installing private charging infrastructures.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Decarbonisation Roadmap: 4. Net Zero Goal</h2>
+            <p>By 2050, Optimus Prime's fleet is slated to be fully electric, with an efficient charging and scheduling system, contributing to the net-zero goal.</p>
+        </section>
+        <section class="project-section">
+            <h2>Competition Pitch Deck</h2>
+            <div class="pdf-container">
+                <iframe src="./assets/AccentureXBAC_Submission_TripleL.pdf"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2024 Chan Kit Ho. Built with HTML and CSS.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
