@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Delivery Operations Enhancement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        section {
+            margin: 0 auto;
+            max-width: 1200px;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        .project-content {
+            padding-top: 12vh;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+
+        .project-content .subtitle {
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .project-section {
+            clear: both;
+            overflow: hidden;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .project-section h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #333;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project-section a:hover {
+            text-decoration: underline;
+        }
+
+        .project-content img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .project-section p.p__caption {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#project-header">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#project-header" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <main class="project-content">
+        <section class="project-section">
+            <div class="title-container">
+                <h1 class="title">Enhancing Ecommerce Delivery Operations Through Predictive Analytics</h1>
+                <p class="subtitle">Leveraging Machine Learning for Improved Delivery Efficiency and Accuracy</p>
+            </div>
+            <img src="./assets/project-4.1.png" alt="Delivery Model Visualization">
+            <p class="p__caption">Course: BC2407 Analytics II, Grade obtained: A+</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Project Overview</h2>
+
+            <p><strong>Objective:</strong> Enhance Shopee's delivery operations through machine learning predictive
+                analytics.</p>
+            <p></br><strong>Approach:</strong> Data preparation, cleaning, trend exploration, and evaluation of models
+                (Linear Regression, CART, MARS, Random Forest).</p>
+            <p></br><strong>Findings:</strong> Random Forest demonstrated the highest accuracy for forecasting delivery
+                times and predicting potential delays.</p>
+            <p></br><strong>Recommendations:</strong> Integrate predictive capabilities into Shopee's app for better
+                delivery estimates and develop a real-time dashboard to address delivery issues proactively.</p>
+            <p></br><strong>Impact:</strong> Improved customer satisfaction, reduced delivery anxiety, and enhanced
+                operational efficiency.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Problem Statement</h2>
+            <p>Our team aims to leverage analytics to address the challenge of late deliveries in Shopee through
+                predicting the risk of late delivery and the predicted days required to deliver. By doing so, this enables Shopee to enhance customer satisfaction, optimize operational
+                efficiency, and gain a competitive edge in the market.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Data Preparation, Cleaning, and Exploration</h2>
+            <p><strong>Data Source:</strong> Kaggle dataset with 52 features and 180,519 deliveries.</p>
+            <p><strong>Cleaning:</strong> Removed irrelevant and redundant variables, handled location and personal
+                information, and formatted date data.</p>
+            <p><strong>Exploration:</strong> Identified high late delivery rates (54.82%), inconsistent delivery
+                schedules, and uniform late delivery rates across regions and product departments.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Model Training and Evaluation</h2>
+            <p><strong>Train-Test Split:</strong> 70% training, 30% testing.</p>
+            <p></br><strong>Models Used:</strong></p>
+            <ul>
+                <li><strong>Linear Regression:</strong> Predicts delivery days; evaluated for multicollinearity and
+                    accuracy.</li>
+                <li><strong>CART (Classification and Regression Trees):</strong> Provides interpretable results; pruned
+                    to avoid overfitting.</li>
+                <li><strong>MARS (Multivariate Adaptive Regression Splines):</strong> Captures complex relationships;
+                    pruned to balance complexity and accuracy.</li>
+                <li><strong>Random Forest:</strong> Aggregates multiple trees; robust model with error rates stabilized
+                    at 200 trees.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Evaluation of Model Performance</h2>
+            <img src="./assets/project-4.3.png" alt="Delivery Model Visualization">
+            <p><strong>Metrics for Comparison:</strong> Traditional metrics like R-squared, RMSE, and MAE might not be
+                suitable due to the discrete nature of delivery days. A new metric was developed to assess prediction
+                accuracy by evaluating underestimation and overestimation after a ceiling operation on predicted values.
+            </p>
+            <p></br><strong>Model Performance Summary:</strong></p>
+            <ul>
+                <li><strong>Random Forest:</strong> Best performing with highest accuracy (36.75%) and lowest
+                    underestimation rate.</li>
+                <li><strong>CART:</strong> Good performance but with higher underestimation compared to Random Forest.
+                </li>
+                <li><strong>Logistic Regression:</strong> Lower accuracy and higher error rates compared to Random
+                    Forest and CART.</li>
+                <li><strong>MARS:</strong> Not performing as well as other models in terms of accuracy.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Business Applications</h2>
+            <p><strong>Recommendations:</strong></p>
+            <ul>
+                <li><strong>Predicting Delivery Days:</strong> Integrate the model into the e-commerce app to improve
+                    delivery estimates and customer satisfaction.</li>
+                <li><strong>Predicting Late Orders:</strong> Implement a dashboard for real-time monitoring and
+                    continuous improvement.</li>
+            </ul>
+            <p></br><strong>Variable Importance Analysis:</strong></p>
+            <ul>
+                <li>Focus on optimizing supply chain for critical locations (Order Region, Customer State).</li>
+                <li>Prepare for peak periods by adjusting inventory and staffing (Month, Weekday).</li>
+                <li>Shipping mode adjustments based on performance evaluations.</li>
+            </ul>
+            <p></br><strong>Limitations:</strong></p>
+            <ul>
+                <li>High implementation costs and potential for resource strain.</li>
+                <li>Lack of detailed inventory and delivery process data.</li>
+                <li>Impact of global events not accounted for in the model.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Conclusion</h2>
+            <p>Machine learning models, particularly Random Forest, offer valuable insights for improving delivery
+                performance. Future enhancements could include tracking additional variables and exploring other
+                predictive applications to drive business growth.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Acknowledgments</h2>
+            <p>This project, including its report, script, and presentation, was developed solely as a Proof of Concept
+                for academic purposes under the course BC2407 at Nanyang Technological University Business School. It
+                was presented internally to the course lecturer and is not affiliated with or endorsed by Shopee
+                or any commercial entities. All analyses, predictions, and recommendations are hypothetical and for
+                educational purposes only.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2024 Chan Kit Ho. Built with HTML and CSS.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
