@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen {
     #profile {
       height: 83vh;
     }
@@ -6,7 +6,8 @@
       flex-wrap: wrap;
     }
     #contact{
-      height: fit-content;
+        height: 83vh;
+        padding-bottom: 16vh;
     }
   }
   
@@ -47,7 +48,8 @@
   
   @media screen and (max-width: 600px) {
     #contact {
-      height: 40vh;
+      height: 82vh;
+      padding-bottom: 12vh;
     }
     #profile {
       height: 83vh;
