@@ -459,9 +459,50 @@ footer {
     padding: 20px;
     text-align: center;
     margin: 0 1rem;
+    cursor: pointer;
 }
 
 footer p {
     margin: 0;
     text-align: center;
+}
+
+/* GAME */
+.game-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wooden-fish {
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.wooden-fish img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.floating-text {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: black;
+    animation: floatUp 1s ease forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50px);
+    }
 }
