@@ -83,8 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
     //   localStorage.setItem("highscore", highscore); 
     // }
     // Play sound
-    woodenFishSound.currentTime = 0;
-    woodenFishSound.play();
+    requestAnimationFrame(() => {
+      const audio = document.getElementById('woodenFishSound');
+      audio.currentTime = 0;
+      audio.play().catch(e => console.log('Audio playback error: ', e));
 
     // Animate the fish
     const muyu = woodenFish.querySelector("img");
@@ -103,5 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       floatingText.remove();
     }, 1000);
-  };
+  });
+};
 });
