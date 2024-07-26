@@ -260,6 +260,14 @@ section {
     cursor: pointer;
 }
 
+.btn-color-1:active,
+.btn-color-2:active {
+    background: rgb(53, 53, 53);
+    color: white;
+    outline: none;
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
 
 .btn-container {
     gap: 1rem;
