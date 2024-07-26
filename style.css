@@ -358,7 +358,8 @@ border-radius: 2rem;
     overflow-x: auto;
     white-space: nowrap;
     height: auto;
-    padding: 6vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
     margin-bottom:6vh;
   }
 
