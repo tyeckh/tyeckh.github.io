@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const footer = document.querySelector("footer");
   const gameContainer = document.getElementById("gameContainer");
   const woodenFish = document.getElementById("woodenFish");
-  const woodenFishSound = document.getElementById("woodenFishSound");
+  const audio = document.getElementById('woodenFishSound');
 
   // highscoreEl.textContent = `Highscore: ${highscore}`;
 
@@ -84,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // }
     // Play sound
     requestAnimationFrame(() => {
-      const audio = document.getElementById('woodenFishSound');
       audio.currentTime = 0;
       audio.play().catch(e => console.log('Audio playback error: ', e));
 
