@@ -244,7 +244,7 @@ section {
     width: 8rem;
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
-    color: black;
+
 }
 
 .btn-color-1,
@@ -260,14 +260,6 @@ section {
     cursor: pointer;
 }
 
-.btn-color-1:active,
-.btn-color-2:active {
-    background: rgb(53, 53, 53);
-    color: white;
-    outline: none;
-    border: rgb(53, 53, 53) 0.1rem solid;
-}
-
 
 .btn-container {
     gap: 1rem;
@@ -277,6 +269,7 @@ section {
 
 #about {
     position: relative;
+    margin-top: 38px;
 }
 
 .about-containers {
@@ -295,12 +288,6 @@ display: flex;
 
 .about-pic {
 border-radius: 2rem;
-}
-
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
 }
 
 .details-container {
