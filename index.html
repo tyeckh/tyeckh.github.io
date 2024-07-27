@@ -1,336 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chan Kit Ho</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon-logo3.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chan Kit Ho</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon-logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
-    <nav id="desktop-nav">
-        <a href="#profile" class="logo">Chan Kit Ho</a>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#project-header">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <a href="#profile" class="logo">Chan Kit Ho</a>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#project-header" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Profile Pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <!-- <h1 class="title">Chan Kit Ho</h1> -->
-            <h1 class="title" id="typing-text"></h1>
+  <nav id="desktop-nav">
+    <a href="#profile" class="logo">Chan Kit Ho</a>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#project-header">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <a href="#profile" class="logo">Chan Kit Ho</a>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#project-header" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Profile Pic">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <!-- <h1 class="title">Chan Kit Ho</h1> -->
+      <h1 class="title" id="typing-text"></h1>
 
-            <p class="section__text__p2">Double Degree Undergraduate in Business and Computer Science </p>
-            <p class="section__text__p3"> Nanyang Technological University, Singapore </p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2" 
-                onclick="window.open('https://drive.google.com/file/d/17qlIjwv4LQHdQ3C1d0TCGBaqcY6ACMlb/view')"
-                > View CV</button>
+      <p class="section__text__p2">Double Degree Undergraduate in Business and Computer Science </p>
+      <p class="section__text__p3"> Nanyang Technological University, Singapore </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('https://drive.google.com/file/d/17qlIjwv4LQHdQ3C1d0TCGBaqcY6ACMlb/view')"> View
+          CV</button>
 
-                <button 
-                class="btn btn-color-1" 
-                onclick="location.href = './#contact'"
-                > Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                alt="My Linkedin Profile"
-                class="icon"
-                onclick="window.open('https://linkedin.com/in/chan-kit-ho', '_blank', 'noopener,noreferrer')"/> 
-                
-                <img src="./assets/github.png" 
-                alt="My Github Profile"
-                class="icon"
-                onclick="window.open('https://github.com/tyeckh', '_blank', 'noopener,noreferrer')"/>            </div>
+        <button class="btn btn-color-1" onclick="location.href = './#contact'"> Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon"
+          onclick="window.open('https://linkedin.com/in/chan-kit-ho', '_blank', 'noopener,noreferrer')" />
+
+        <img src="./assets/github.png" alt="My Github Profile" class="icon"
+          onclick="window.open('https://github.com/tyeckh', '_blank', 'noopener,noreferrer')" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1"> Get to Know More</p>
+    <h1 class="title"> About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile Pic" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3> Experience</h3>
+            <p2> Experience in Data Governance, Data Engineering and Analytics <br /> <br />
+              Ex-Intern at Health Promotion Board, Keppel Group and Seatrium Ltd</p2>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+
+            <p2>Bachelor of Computing in Computer Science (Honours)<br /><br />
+              Bachelor of Business in Business Analytics (Honours)</p>
+              <p2><br />Expected Graduation: 2026 </p>
+          </div>
         </div>
-    </section>    
-    <section id="about">
-        <p class="section__text__p1"> Get to Know More</p>
-        <h1 class="title"> About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img
-                src ="./assets/about-pic.png"
-                alt="Profile Pic"
-                class="about-pic" 
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img
-                        src ="./assets/experience.png"
-                        alt="Experience icon"
-                        class="icon" 
-                        />
-                        <h3> Experience</h3>
-                        <p2> Experience in Data Governance, Data Engineering and Analytics <br/> <br/>
-                            Ex-Intern at Health Promotion Board, Keppel Group and Seatrium Ltd</p2>
-                    </div>
-                    <div class="details-container">
-                        <img
-                        src ="./assets/education.png"
-                        alt="Education icon"
-                        class="icon" 
-                        />
-                        <h3>Education</h3>
-                        
-                        <p2>Bachelor of Computing in Computer Science (Honours)<br/><br/>
-                            Bachelor of Business in Business Analytics (Honours)</p>
-                        <p2><br/>Expected Graduation: 2026 </p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p> I'm an energetic and imaginative individual with a strong knack
-                        for unraveling complex problems and a passion for crafting
-                         out-of-the-box solutions. I thrive on leading projects, guiding 
-                         teams, and connecting with people to bring fresh ideas to life. 
-                         My creative approach drives me to explore new methods and strategies that push boundaries and make a meaningful impact.  When 
-                         I'm not immersed in my studies, you'll find me outdoors, hiking 
-                         or cycling, exploring new trails and soaking in the beauty of nature.
-                    </p>
-                </div>
-            </div>
+        <div class="text-container">
+          <p> I'm an energetic and imaginative individual with a strong knack
+            for unraveling complex problems and a passion for crafting
+            out-of-the-box solutions. I thrive on leading projects, guiding
+            teams, and connecting with people to bring fresh ideas to life.
+            My creative approach drives me to explore new methods and strategies that push boundaries and make a
+            meaningful impact. When
+            I'm not immersed in my studies, you'll find me outdoors, hiking
+            or cycling, exploring new trails and soaking in the beauty of nature.
+          </p>
         </div>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-                <h2 class="experience-sub-title">Programming Languages</h2>
-                <div class="article-container">
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>Python</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>R</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>HTML</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>CSS</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>C++</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>SQL</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>JavaScript</h3>
-                      <p>Basic</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>PostgreSQL</h3>
-                      <p>Basic</p>
-                    </div>
-                  </article>
-                </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
               </div>
-              
-            <div class="details-container">
-                <h2 class="experience-sub-title">Business and Analytics Skills</h2>
-                <div class="article-container">
-                    <!-- Highest Experience Level -->
-                    <article>
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>Data Visualization</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                
-                    <!-- Intermediate Experience Level -->
-                    <article>
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>Predictive Analytics</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>Project Management</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>Database Management</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>Data Governance</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <div>
-                            <h3>Financial Management</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>R</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
           </div>
-        </div>
-      </section>
-      <section-header id="project-header">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-      </section-header>
-      <section id="projects">
-        <div class="project-card">
-            <img src="./assets/project-3.2.png" alt="Project 3">
-            <p class="project-title">NTU BAC X Accenture Case Competition, Road to Net Zero Emissions</p>
-            <a href="project3.html" class="project-btn">View Project</a>
         </div>
 
-        <div class="project-card">
-            <img src="./assets/project-4.1.png" alt="Project 4">
-            <p class="project-title">Enhancing Ecommerce Delivery Through Predictive Analytics</p>
-            <a href="project4.html" class="project-btn">View Project</a>
-        </div>
-        <div class="project-card">
-            <img src="./assets/project-2.1.jpg" alt="Project 2">
-            <p class="project-title">HacX! Hack for Public Safety, a Computer Vision and ML Approach</p>
-            <a href="project2.html" class="project-btn">View Project</a>
-        </div>
-        <div class="project-card">
-            <img src="./assets/project-1.1.png" alt="Project 1">
-            <p class="project-title">Advanced Predictive Modeling for Emission Reduction in Oil & Gas </p>
-            <a href="project1.html" class="project-btn">View Project</a>
-          </div>
-        <div class="project-card">
-            <img src="./assets/project-5.2.png" alt="Project 5">
-            <p class="project-title">Co-Designing an mHealth Application for Older Adults in Singapore</p>
-            <a href="project5.html" class="project-btn">View Project</a>
-        </div>
-        
+        <div class="details-container">
+          <h2 class="experience-sub-title">Business and Analytics Skills</h2>
+          <div class="article-container">
+            <!-- Highest Experience Level -->
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Data Visualization</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
 
-        </div>
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:chankitho001@gmail.com">chankitho001@gmail.com</a></p>
+            <!-- Intermediate Experience Level -->
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Predictive Analytics</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Project Management</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Database Management</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Data Governance</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Financial Management</h3>
+                <p>Basic</p>
+              </div>
+            </article>
           </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://linkedin.com/in/chan-kit-ho" target="_blank" rel="noopener noreferrer"> LinkedIn</a></p>
-            </div>
         </div>
-        <div class="game-container" id="gameContainer">
-            <div class="wooden-fish" id="woodenFish">
-                <img src="./assets/muyu.png" alt="Wooden Fish">
-            </div>
-            <p>Blessings to get internships and job offers</p>
-            <audio id="woodenFishSound" src="./assets/muyu.mp3" preload="auto"></audio>
-        </div>
-      </section>
-      <footer>
-        <p>Click me 3 times to reveal a surprise!</br>Copyright &#169; 2024 Chan Kit Ho. Built with HTML and CSS.</p>
-      </footer>
-      
-      <script src="script.js"></script>
-    </body>
-  </html>
+      </div>
+    </div>
+  </section>
+  <section-header id="project-header">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+  </section-header>
+  <section id="projects">
+    <div class="project-card">
+      <img src="./assets/project-3.2.png" alt="Project 3">
+      <p class="project-title">NTU BAC X Accenture Case Competition, Road to Net Zero Emissions</p>
+      <a href="project3.html" class="project-btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/project-4.1.png" alt="Project 4">
+      <p class="project-title">Enhancing Ecommerce Delivery Through Predictive Analytics</p>
+      <a href="project4.html" class="project-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="./assets/project-2.1.jpg" alt="Project 2">
+      <p class="project-title">HacX! Hack for Public Safety, a Computer Vision and ML Approach</p>
+      <a href="project2.html" class="project-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="./assets/project-1.1.png" alt="Project 1">
+      <p class="project-title">Advanced Predictive Modeling for Emission Reduction in Oil & Gas </p>
+      <a href="project1.html" class="project-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="./assets/project-5.2.png" alt="Project 5">
+      <p class="project-title">Co-Developing an mHealth Application for Older Adults in Singapore</p>
+      <a href="project5.html" class="project-btn">View Project</a>
+    </div>
+
+
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:chankitho001@gmail.com">chankitho001@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://linkedin.com/in/chan-kit-ho" target="_blank" rel="noopener noreferrer"> LinkedIn</a></p>
+      </div>
+    </div>
+    <div class="game-container" id="gameContainer">
+      <div class="wooden-fish" id="woodenFish">
+        <img src="./assets/muyu.png" alt="Wooden Fish">
+      </div>
+      <p>Blessings to get internships and job offers</p>
+      <audio id="woodenFishSound" src="./assets/muyu.mp3" preload="auto"></audio>
+    </div>
+  </section>
+  <footer>
+    <p>Click me 3 times to reveal a surprise!</br>Copyright &#169; 2024 Chan Kit Ho. Built with HTML and CSS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

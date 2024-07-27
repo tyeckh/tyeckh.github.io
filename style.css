@@ -5,8 +5,8 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -18,7 +18,7 @@ html {
 }
 
 p {
-    color: rgb(85,85,85);
+    color: rgb(85, 85, 85);
 }
 
 .nav__buffer {
@@ -26,47 +26,48 @@ p {
 }
 
 /* TRANSITION */
-a, .btn{
+a,
+.btn {
     transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
 nav,
-.nav-links{
+.nav-links {
     display: flex
 }
 
 nav {
     position: fixed;
     width: 100%;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background-color: white; /* Ensure the nav bar has a background color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow for better visibility */
-    z-index: 1000; /* Ensure the nav bar is above other elements */
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-.nav-links{
+.nav-links {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
 }
 
-a:hover{
+a:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181,181,181)
+    text-decoration-color: rgb(181, 181, 181)
 }
 
-.logo{
+.logo {
     font-size: 2rem;
 }
 
@@ -78,17 +79,17 @@ a:hover{
 
 /*HAMBRGER MENU*/
 
-#hamburger-nav{
+#hamburger-nav {
     display: none;
 }
 
-.hamburger-menu{
+.hamburger-menu {
     position: relative;
     display: inline-block;
 
 }
 
-.hamburger-icon{
+.hamburger-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,22 +134,25 @@ a:hover{
 }
 
 .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px,5px);
+    transform: rotate(45deg) translate(10px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
     opacity: 0;
 }
+
 .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px,-5px);
+    transform: rotate(-45deg) translate(10px, -5px);
 }
 
 .hamburger-icon span:first-child {
     transform: none;
 }
+
 .hamburger-icon span:nth-child(2) {
     opacity: 1;
 }
+
 .hamburger-icon span:last-child {
     transform: none;
 }
@@ -210,11 +214,13 @@ section {
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
+
 .title {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
 #socials-container {
     display: flex;
     justify-content: center;
@@ -243,7 +249,7 @@ section {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
     color: black;
 }
 
@@ -254,8 +260,8 @@ section {
 
 
 .btn-color-1:hover,
-.btn-color-2:hover{
-    background: rgb(53,53,53);
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
     color: white;
     cursor: pointer;
 }
@@ -277,17 +283,19 @@ section {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
 .about-details-container {
     justify-content: center;
     flex-direction: column;
 }
+
 .about-containers,
 .about-details-container {
-display: flex;
+    display: flex;
 }
 
 .about-pic {
-border-radius: 2rem;
+    border-radius: 2rem;
 }
 
 .details-container {
@@ -295,15 +303,15 @@ border-radius: 2rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
     text-align: center;
 }
 
 .text-container p {
     text-align: justify;
-  }
-  
+}
+
 
 .section__pic-container {
     height: 400px;
@@ -316,59 +324,60 @@ border-radius: 2rem;
 
 #experience {
     position: relative;
-  }
-  
-  .experience-sub-title {
+}
+
+.experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
-  }
-  
-  .experience-details-container {
+}
+
+.experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .article-container {
+}
+
+.article-container {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
-  }
-  
-  article {
+}
+
+article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
-  }
-  
-  article .icon {
+}
+
+article .icon {
     cursor: default;
-  }
-  
-  /* PROJECTS SECTION */
-  
-  #projects {
+}
+
+/* PROJECTS SECTION */
+
+#projects {
     position: relative;
     overflow-x: auto;
     white-space: nowrap;
     height: auto;
     padding-top: 6vh;
     padding-bottom: 6vh;
-    margin-bottom:6vh;
-  }
+    margin-bottom: 6vh;
+}
 
-  section-header {
+section-header {
     display: block;
-    padding-top: 12vh;  
+    padding-top: 12vh;
     box-sizing: border-box;
-  }
-  .project-card {
+}
+
+.project-card {
     display: inline-block;
     vertical-align: top;
     margin-right: 2rem;
@@ -379,26 +388,26 @@ border-radius: 2rem;
     border: rgb(163, 163, 163) 0.1rem solid;
     padding: 1rem;
     box-sizing: border-box;
-    height:auto;
-  }
+    height: auto;
+}
 
-  .project-card img {
+.project-card img {
     border-radius: 1rem;
     width: 100%;
     height: 200px;
     object-fit: cover;
-  }
+}
 
-  .project-title {
+.project-title {
     margin: 1rem 0;
     font-size: 1.25rem;
     color: black;
-    white-space: normal; /* Allow text to wrap */
-    overflow: visible; /* Ensure text is not cut off */
-    word-wrap: break-word; /* Allow long words to break and wrap to the next line */
+    white-space: normal;
+    overflow: visible;
+    word-wrap: break-word;
 }
 
-  .project-btn {
+.project-btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
@@ -408,12 +417,13 @@ border-radius: 2rem;
     background: none;
     border-radius: 2rem;
     transition: all 300ms ease;
-  }
+}
 
-  .project-btn:hover {
+.project-btn:hover {
     background: rgb(163, 163, 163);
     color: white;
-  }
+}
+
 /* CONTACT */
 
 #contact {
@@ -421,9 +431,9 @@ border-radius: 2rem;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-  }
-  
-  .contact-info-upper-container {
+}
+
+.contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -432,28 +442,28 @@ border-radius: 2rem;
     background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
-  }
-  
-  .contact-info-container {
+}
+
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
-  }
-  
-  .contact-info-container p {
+}
+
+.contact-info-container p {
     font-size: larger;
-  }
-  
-  .contact-icon {
+}
+
+.contact-icon {
     cursor: default;
-  }
-  
-  .email-icon {
+}
+
+.email-icon {
     height: 2.5rem;
-  }
-  
+}
+
 /* FOOTER SECTION */
 
 footer {
@@ -502,6 +512,7 @@ footer p {
         opacity: 1;
         transform: translate(-50%, 0);
     }
+
     100% {
         opacity: 0;
         transform: translate(-50%, -50px);

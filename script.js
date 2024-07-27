@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const footer = document.querySelector("footer");
   const gameContainer = document.getElementById("gameContainer");
   const woodenFish = document.getElementById("woodenFish");
-  const audio = document.getElementById('woodenFishSound');
+  const audio = document.getElementById("woodenFishSound");
 
   // highscoreEl.textContent = `Highscore: ${highscore}`;
 
@@ -80,30 +80,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // if (todaysBlessingCount > highscore) {
     //   highscore = todaysBlessingCount;
     //   highscoreEl.textContent = `Highscore: ${highscore}`;
-    //   localStorage.setItem("highscore", highscore); 
+    //   localStorage.setItem("highscore", highscore);
     // }
-    // Play sound
+
     requestAnimationFrame(() => {
       audio.currentTime = 0;
-      audio.play().catch(e => console.log('Audio playback error: ', e));
+      audio.play().catch((e) => console.log("Audio playback error: ", e));
 
-    // Animate the fish
-    const muyu = woodenFish.querySelector("img");
-    muyu.style.transform = "scale(1.1)";
-    setTimeout(() => {
-      muyu.style.transform = "scale(1)";
-    }, 100);
+      const muyu = woodenFish.querySelector("img");
+      muyu.style.transform = "scale(1.1)";
+      setTimeout(() => {
+        muyu.style.transform = "scale(1)";
+      }, 100);
 
-    // Show floating text
-    const floatingText = document.createElement("div");
-    floatingText.classList.add("floating-text");
-    floatingText.textContent = "功德 + 1";
-    floatingText.style.fontWeight = "bold";
-    woodenFish.appendChild(floatingText);
+      const floatingText = document.createElement("div");
+      floatingText.classList.add("floating-text");
+      floatingText.textContent = "功德 + 1";
+      floatingText.style.fontWeight = "bold";
+      woodenFish.appendChild(floatingText);
 
-    setTimeout(() => {
-      floatingText.remove();
-    }, 1000);
-  });
-};
+      setTimeout(() => {
+        floatingText.remove();
+      }, 1000);
+    });
+  };
 });
