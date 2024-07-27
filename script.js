@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const floatingText = document.createElement("div");
       floatingText.classList.add("floating-text");
-      floatingText.textContent = "功德 + 1";
+      floatingText.textContent = "Merit + 1";
       floatingText.style.fontWeight = "bold";
       woodenFish.appendChild(floatingText);
 
