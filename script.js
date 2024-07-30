@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.knock();
   });
 
+  
   window.knock = () => {
     // todaysBlessingCount++;
     // todaysBlessingEl.textContent = `Today's Blessing: ${todaysBlessingCount}`;
@@ -86,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(() => {
       audio.currentTime = 0;
       audio.play().catch((e) => console.log("Audio playback error: ", e));
+
 
       const muyu = woodenFish.querySelector("img");
       muyu.style.transform = "scale(1.1)";
