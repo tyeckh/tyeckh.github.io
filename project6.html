@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthWise AI Financial Planner</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        section {
+            margin: 0 auto;
+            max-width: 1200px;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        .project-content {
+            padding-top: 12vh;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+
+        .project-content .subtitle {
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .project-section {
+            clear: both;
+            overflow: hidden;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .project-section h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #333;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .project-section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project-section a:hover {
+            text-decoration: underline;
+        }
+
+        .project-content img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .project-section p.p__caption {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#project-header">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="window.location.href='index.html';">Chan Kit Ho</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#project-header" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <main class="project-content">
+        <section class="project-section">
+            <div class="title-container">
+                <h1 class="title">WealthWise: AI-Powered Financial Planning Web Application</h1>
+                <p class="subtitle">Enhancing Financial Advisory Through Generative AI, Personalisation, and User-Centric Design</p>
+            </div>
+            <img src="./assets/project-6.1.png" alt="WealthWise App Preview">
+            <p class="p__caption">Developed for BC3415 AI in Accounting & Finance | NTU, 2024</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Project Overview</h2>
+            <p><strong>Objective:</strong> Develop a full-stack web application to enhance the effectiveness of financial advisory services and empower users with tools for informed financial decisions.</p>
+            <p><br /><strong>Technology Stack:</strong> Flask (Python), HTML, CSS, JavaScript, Google Gemini API, TextBlob, Markdown, Render, EmailJS</p>
+            <p><br /><strong>Development Phases:</strong></p>
+            <ul>
+                <li>UI Prototyping with Figma</li>
+                <li>Frontend Development in HTML/CSS/JS</li>
+                <li>Backend Development in Flask</li>
+                <li>AI Integration using Gemini API</li>
+                <li>Deployment via Render</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>Core Features</h2>
+            <ul>
+                <li><strong>Expense Tracker:</strong> Fast and intuitive interface to record and monitor income and expenses</li>
+                <li><strong>AI Financial Guidance:</strong> Personalized saving strategies based on user inputs, powered by Google Gemini</li>
+                <li><strong>Gamified Character Generator:</strong> Engage users by visualizing financial personas (simulated for MVP)</li>
+                <li><strong>Email Contact Integration:</strong> User queries routed to team inbox via EmailJS</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>User Journey & Impact</h2>
+            <p>WealthWise was designed to support Financial Advisors (FAs) by reducing time spent on routine questions and increasing client engagement. For end-users, the app provides 24/7 personalized guidance and empowers them to take charge of their financial habits through AI-powered insights.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Reflections & Future Work</h2>
+            <ul>
+                <li><strong>Ethical Considerations:</strong> Incorporate responsible AI practices like transparency and fairness</li>
+                <li><strong>Data Security:</strong> Improve data encryption and introduce secure authentication</li>
+                <li><strong>Advanced Features:</strong> Add predictive analytics, real-time market integration, and long-term financial goal planning</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2024 Chan Kit Ho. </br>Built with HTML and CSS. </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
